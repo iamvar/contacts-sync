@@ -1,0 +1,7 @@
+[default]
+app__cache_dir = "@jinja {{this.ROOT_PATH_FOR_DYNACONF}}/cache"
+app__config_dir = "@jinja {{this.ROOT_PATH_FOR_DYNACONF}}/config"
+
+# @see https://developers.google.com/people/v1/how-tos/authorizing?hl=ru#contact-scopes
+google_contacts__scopes = ['https://www.googleapis.com/auth/contacts.readonly']
+# either put credentials.json file to config folder or specify credentials in .secrets.toml
